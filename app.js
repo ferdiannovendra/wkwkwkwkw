@@ -15,7 +15,7 @@ const port = process.env.PORT || config.port;
 const helper = require('./app/fabricOps/helper');
 const user = require('./app/routers/user');
 const election = require('./app/routers/election');
-const candidate = require('./app/routers/candidate');
+// const candidate = require('./app/routers/candidate');
 
 
 // const admin = require('./app/routers/adm')
@@ -29,7 +29,7 @@ app.use(auth.authenticate);
 
 app.use("/admin", user);
 app.use("/admin/election", election)
-app.use("/admin/candidate", candidate)
+// app.use("/admin/candidate", candidate)
 
 
 
